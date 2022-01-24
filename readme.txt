@@ -5,9 +5,9 @@ contribute to his projects: https://discord.gg/k4fuZtyDRu and sub to his YouTube
 
 Spawns three types of Raptors (only one at each spawn) at Chicken Spawns & Bear Spawns on Chernarus:
 
-large dbo_raptor
-smalll dbo_raptorB
-dbo_idrex
+dbo_raptor (medium size)
+dbo_raptorB (Juvenile, small)
+dbo_idrex (full size)
 
 THIS IS NOT DEANOSBEANO'S OFFICIAL INSTALL INSTRUCTIONS AND IS NOT AFFILIATED WITH DEANOBEANO.
 
