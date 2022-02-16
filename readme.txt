@@ -3,11 +3,13 @@ DayZ Chernarus PC Dinosaur / Raptor dbo_raptors Mod by DeanosBeano PC Install In
 Many thanks to DeanosBeano for creating this amazing mod. Please visit his Discord and if you can,
 contribute to his projects: https://discord.gg/k4fuZtyDRu and sub to his YouTube: https://www.youtube.com/channel/UCy2259UHKx4awhMIkjT0lkQ
 
-Spawns three types of Raptors (only one at each spawn) at Chicken Spawns & Bear Spawns on Chernarus:
+Spawns below types of Raptors (only one at each spawn) at Chicken Spawns & Bear Spawns on Chernarus:
 
 dbo_raptor (medium size)
 dbo_raptorB (Juvenile, small)
 dbo_idrex (full size)
+dbo_tricero (Big!)
+dbo_trex (run!!!!)
 
 THIS IS NOT DEANOSBEANO'S OFFICIAL INSTALL INSTRUCTIONS AND IS NOT AFFILIATED WITH DEANOBEANO.
 
@@ -70,6 +72,42 @@ Open your events.xml file (its in the db folder on your server) and add the foll
         <active>1</active>
         <children>
             <child lootmax="0" lootmin="0" max="1" min="1" type="dbo_idrex"/>
+        </children>
+    </event>
+    <!--Bear Spawn Raptor1B entry-->
+	<event name="AnimalRaptor1B">
+        <nominal>20</nominal>
+        <min>20</min>
+        <max>20</max>
+        <lifetime>180</lifetime>
+        <restock>0</restock>
+        <saferadius>40</saferadius>
+        <distanceradius>0</distanceradius>
+        <cleanupradius>0</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="1" min="1" type="dbo_trex"/>
+        </children>
+    </event>
+    <!--Bear Spawn Raptor1C entry-->
+	<event name="AnimalRaptor1C">
+        <nominal>20</nominal>
+        <min>20</min>
+        <max>20</max>
+        <lifetime>180</lifetime>
+        <restock>0</restock>
+        <saferadius>40</saferadius>
+        <distanceradius>0</distanceradius>
+        <cleanupradius>0</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="1" min="1" type="dbo_tricero"/>
         </children>
     </event>
 	<!--Hen Spawn Large Raptor2 entry-->
@@ -142,6 +180,14 @@ just below "<territory type="Herd" name="Bear" behavior="BlissBearGroupBeh">
 
 		<!--Bear Spawn Raptor1 entry-->
 		<territory type="Herd" name="Raptor1" behavior="BlissBearGroupBeh">
+			<file usable="bear_territories"/>
+		</territory>
+		<!--Bear Spawn Raptor1B entry-->
+		<territory type="Herd" name="Raptor1B" behavior="BlissBearGroupBeh">
+			<file usable="bear_territories"/>
+		</territory>
+		<!--Bear Spawn Raptor1C entry-->
+		<territory type="Herd" name="Raptor1C" behavior="BlissBearGroupBeh">
 			<file usable="bear_territories"/>
 		</territory>
 		<!--Hen Spawn Raptor2 entry-->
